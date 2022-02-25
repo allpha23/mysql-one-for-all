@@ -1,5 +1,5 @@
 SELECT DISTINCT (c.customer) AS usuario,
-  IF(MAX(YEAR(h.play_date)) = '2021', 'Usuario ativo', 'Usuario inativo') AS 'condicao_usuario'
+  IF(MAX(YEAR(h.play_date)) = '2021', 'Usuário ativo', 'Usuário inativo') AS 'condicao_usuario'
 FROM 
   SpotifyClone.customer AS c
   INNER JOIN
